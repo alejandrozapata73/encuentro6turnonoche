@@ -44,19 +44,32 @@
 
 //variable del tipo global
 let total = 0;
+let num1 =0;
+let num2 = 0;
+let contador = 0;
+
+
+
+function pedirDatos(){
+
+    num1 = Number(prompt("ingrese un primer numero"))
+    num2 = Number(prompt("ingrese un segundo numero"))
+
+}
 
 
 //validaciones
-function sumarNumeros(numA,numB){
+function sumarNumeros(){
+
 
     //variable local
-    console.log(isNaN(numB));
+    console.log(isNaN(num2));
 
-    if(numB==null || isNaN(numB) || numB <0){
+    if(num2==null || isNaN(num2) || num2 <0){
         alert("esta vacio!!! no puedo hacer la suma o no es numero")
     }else{
 
-    total = numA + numB;
+    total = num2 + num2;
 
     console.log("la suma es local: "+ total);
     }
@@ -65,7 +78,7 @@ function sumarNumeros(numA,numB){
 }
 
 // evitar enviar algo vacio
-sumarNumeros(10,3);
+
 
 
 //Scope..entorno de ejecu de variables
@@ -73,3 +86,9 @@ console.log("variable global: "+total);
 
 
 
+function irOtraPa(){
+    console.log("estoy robando tus datos");
+    contador++
+    console.log("contador: " + contador);
+    window.open("http://www.desarrolloweb.com")
+}

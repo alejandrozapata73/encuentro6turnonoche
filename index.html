@@ -18,15 +18,32 @@
       <h1>Eventos!!!</h1>
 
     <div class="card" style="width: 18rem;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" class="card-img-top" alt="...">
+        <img onmouseover="irOtraPa()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Eventos en Js</h5>
           <p class="card-text">Probando eventos </p>
-          <a href="#" class="btn btn-primary">Vamos!!</a>
+          <a onclick="irOtraPa()" href="#" class="btn btn-primary">Salir</a>
         </div>
       </div>
 
+      <button onclick="alert('Hola soy un alert')" type="button" class="btn btn-primary">On click</button>
+
+      <button onmouseover="alert('hola pasaste por arriba')" type="button" class="btn btn-secondary">Secondary</button>
+      <button ondblclick="alert('Necesito 2 veces')" type="button" class="btn btn-success">Success</button>
+      <button onclick="pedirDatos()" type="button" class="btn btn-info">Pedir Datos</button>
+      <button onclick="sumarNumeros()" type="button" class="btn btn-danger">Sumar</button>
       
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Datos</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+
 
     </div>
 
